@@ -1,0 +1,23 @@
+<!--
+  Componente de referencia: Header + status bar.
+  Ya está incluido directamente en cada página de /pages y en index.html.
+  Nota: abrir archivos HTML con doble clic (file://) bloquea fetch() por CORS,
+  por eso este proyecto embebe el header en cada página en vez de inyectarlo.
+  Si sirves el sitio con un servidor local (Live Server, `npx serve`, etc.)
+  puedes usar fetch() + innerHTML para inyectar este fragmento dinámicamente.
+-->
+<div class="status-bar">
+  <div class="container">
+    <div class="status-item"><span class="status-dot"></span> Todos los sistemas <strong>operativos</strong></div>
+    <div class="status-item">SLA promedio: <strong>99.98%</strong></div>
+    <div class="status-item">Mesa de soporte: <strong>24 / 7</strong></div>
+    <div class="status-item" data-clock="lima">-- : -- : --</div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="/index.html" class="logo">GBS<span>.</span></a>
+    <!-- Ver navbar.html -->
+  </div>
+</header>
